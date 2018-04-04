@@ -1,18 +1,18 @@
 import * as React from 'react';
 
 export interface Props {
-    counter: number;
+    value: string;
 }
 
 class Label extends React.Component<Props, object> {
 
     render() {
-      const  {counter} = this.props;
+      const  {value} = this.props;
 
       return (
-        <div className="hello">
-          <div className="greeting">
-            I'm Label Component {counter}
+        <div>
+          <div>
+            Merhaba {value}
           </div>
         </div>
       );
